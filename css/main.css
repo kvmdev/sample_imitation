@@ -8,6 +8,12 @@ body {
     position: relative;
     padding-bottom: 75px;
     min-height: 100%;
+    background: url('../images/sample_menu_bg.jpg') center center/cover fixed;
+    overflow-x: hidden;
+}
+
+.background {
+    background: #fff;
 }
 
 li {
@@ -68,11 +74,30 @@ li {
     padding: 50px 10% 30px;
 }
 
+.section_inner section ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section_inner section ul li{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 500px;
+    background: #fff;
+}
+
+img {
+    width: 100%;
+}
+
 .key {
     height: 500px;
     background: center / cover no-repeat url("../images/sample_key.jpg");
     font-family: 'Noto Serif JP', serif;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .key h1 {
@@ -85,7 +110,6 @@ li {
     text-align: center;
     margin-bottom: 50px;
 }
-
 .menu_title {
     display: inline-block;
     font-family: 'Noto Serif JP', serif;
