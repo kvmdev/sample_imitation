@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     height: 100%;
 }
@@ -126,4 +133,23 @@ img {
 .caffee_menu_image {
     width: 20%;
     border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #251e19;
+    color: #fff;
+    position: relative;
+    transform: translateY(75px);
+}
+
+footer ul a {
+    color: #fff;
+    text-decoration: dotted;
+}
+
+footer img {
+    width: 50px;
 }
